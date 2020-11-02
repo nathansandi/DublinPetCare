@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>FAQ</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+
+<!--[if IE 6]>
+<link href="default_ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+<style type="text/css">
+			.accordion { border: 1px solid #666; border-radius: 5px; padding: 1px; width: 95%; height:auto;}
+			.accord-header { background: #EFEFEF; }
+			.accord-header:hover { cursor: pointer; }
+			.accord-content { display: none; }
+
+</style>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header-wrapper">
+		<div id="header" class="container">
+			<div id="logo">
+				<img src="images/logo1.jpg" alt="logo image">
+				
+			</div>
+		</div>
+		<div id="menu" class="container">
+			<ul>
+				<li><a href="index.html">Homepage</a></li>				
+				<li><a href="sitemap.html">Site Map</a></li>
+				<li class="current_page_item"><a href="faq.html">FAQ</a></li>
+				<li><a href="product.html">Products</a></li>
+				<li><a href="staff.html">About us</a></li>
+				<li><a href="contact.php">Contact</a></li>
+				<li><a href="pet_profile.php">Pet Profile</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="page" class="container">		
+
+		<h1> FAQ</h1>
+		<script type="text/javascript">
+		  $(document).ready(function() {
+			$(".accordion .accord-header").click(function() {
+			  if($(this).next("div").is(":visible")){
+				$(this).next("div").slideUp("slow");
+			  } else {
+				$(".accordion .accord-content").slideUp("slow");
+				$(this).next("div").slideToggle("slow");
+			  }
+			});
+		  });
+		</script>
+				<div class="accordion">
+				<div class="accord-header">Q1. How often should I wash my pet's teeth</div>
+				<div class="accord-content">A1. Once a day.  Always use pet toothpaste - never human!</div>
+				<div class="accord-header">Q2.How often should I wash my pet?</div>
+				<div class="accord-content">A2. Depends on the type of animal.</div>
+				<div class="accord-header">Q3.What is the best food to feed my pet?</div>
+				<div class="accord-content">A3.Consumers should look for foods made by reputable companies with long histories of producing quality diets. </div>
+				<div class="accord-header">Q4.My friend says that grains are bad for dogs, is she correct??</div>
+				<div class="accord-content">A4.yeh.</div>
+				<div class="accord-header">Q5. How can I book an appointment to see the vet?</div>
+				<div class="accord-content">A5.Once you have registered a pet you can follow the links to the "Book Appointment" area of the site which takes you through the process during which you can select which pet or pets you would like to bring in, your preferred date and time of day, and, if appropriate, your preferred vet or nurse. You are then offered a range of appointment slots with variable prices that are determined by how busy the Klinic is, and once you have selected the most convenient time slot, you can confirm and pay for your booking. You can also book by phone but you will not be able to access our flexible prices this way. </div>
+	
+				<article class="bottomcontent">
+					<p>If your question is not answered above the email. E-mail: pet@gmail.com</p>
+				</article>
+			</div>
+	<div id="footer">
+	<p>Copyright (c) 2013. All rights reserved. Design by Nathanyel Sandi.</p>
+    </div>
+	
+</div>
+</div>
+</body>
+</html>
